@@ -118,6 +118,10 @@
             scroll-padding-top: 70px;
         }
 
+        .card-img-top {
+            height: 250px;
+            }
+
         #logo { height: 70px !important; width: auto !important; }
 
         #team1 { height: 150px !important; width: auto !important; }
@@ -128,7 +132,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">
-                <img src="logo1.png" alt="Logo" id="logo">
+                <img src="logo2.png" alt="Logo" id="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -140,9 +144,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
@@ -167,8 +168,8 @@
         <div class="hero-content">
         <div class="hero-inner">
             <h1>Welcome</h1>
-            <p>Transport data for impactful projects:</p>
-            <p><strong>cultivate</strong> provides comprehensive data analysis and transport planning services to build evidence for implementation.</p>
+            <p>Transport data for impactful projects:<br/>
+            <strong>cultivate</strong> provides comprehensive data analysis and transport planning services to build evidence for implementation.</p>
             <a href="#about" class="btn btn-primary btn-lg">About</a>
         </div>
 
@@ -199,49 +200,59 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        <img src="datasci.png" class="card-img-top" alt="Data analysis">
                         <div class="card-body">
-                            <h5 class="card-title">Service One</h5>
-                            <p class="card-text">Exceptional quality and reliability in everything we deliver to our clients.</p>
+                            <h5 class="card-title">Data analysis</h5>
+                            <p class="card-text">Using existing data workflows, and developing custom methodologies, to understand transport patterns and build 'human-first' networks. </p>
+                            <p class="card-text">Our experience particularly includes deriving valuable intelligence from free and open datasets in developing countries, e.g. OpenStreetMap, GHSL, Mapillary etc.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        <img src="capbldg.png" class="card-img-top" alt="Capacity building">
                         <div class="card-body">
-                            <h5 class="card-title">Service Two</h5>
-                            <p class="card-text">Innovative solutions tailored to meet your specific business needs and goals.</p>
+                            <h5 class="card-title">Capacity building</h5>
+                            <p class="card-text">Upskilling local partners, in both the UK and internationally, to 
+                            think of transport 'data first': a shift in mindset and approach to planning and decision-making.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        <img src="econ.jpg" class="card-img-top" alt="Economic appraisal">
                         <div class="card-body">
-                            <h5 class="card-title">Service Three</h5>
-                            <p class="card-text">Dedicated support and guidance throughout your entire project lifecycle.</p>
+                            <h5 class="card-title">Economic appraisal</h5>
+                            <p class="card-text">Building business cases for project investment, often developing custom methodologies to align with business-case guidance (e.g. TAG). </p>
+                            <p class="card-text">Dr Mark Dimond has also completed other forms of assessment, e.g. Paris Alignment Assessment (PAA) for international project financing.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        <img src="gis.jpg" class="card-img-top" alt="Geographic Information Systems">
                         <div class="card-body">
-                            <h5 class="card-title">Service Four</h5>
-                            <p class="card-text">Strategic planning and expertise to help your business grow and succeed.</p>
+                            <h5 class="card-title">Geographic Information Systems</h5>
+                            <p class="card-text">Transport is geographic by its nature, and our GIS expertise helps visualize and analyze transport networks effectively.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        <img src="urban.jpg" class="card-img-top" alt="Urban accessibility modelling">
                         <div class="card-body">
-                            <h5 class="card-title">Service Five</h5>
-                            <p class="card-text">Comprehensive analysis and reporting to track progress and maximize ROI.</p>
+                            <h5 class="card-title">Urban accessibility modelling</h5>
+                            <p class="card-text">Quantifying transport investments in terms of their impact on travel time and equity can help unlock funding. </p>
+                            <p class="card-text">Our team have developed bespoke workflows using low-cost tools, including in countries without extensive transport data infrastructure.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        <img src="policy.png" class="card-img-top" alt="Transport policy">
                         <div class="card-body">
-                            <h5 class="card-title">Service Six</h5>
-                            <p class="card-text">Continuous improvement and optimization to keep you ahead of the competition.</p>
+                            <h5 class="card-title">Transport policy</h5>
+                            <p class="card-text">Policy impact modelling for decision support, where necessary using new workflows and methodologies to suit your client's needs.</p>
                         </div>
                     </div>
                 </div>
@@ -313,7 +324,11 @@
                     <img src="me.jpg" alt="Team Member" id="team1"class="img-fluid rounded-circle">
                 </div>
                 <div class="col-md-8">
-                    <p>Dr Mark Dimond has over 20 years of experience in transport planning and urban data analysis. His expertise spans across various domains, including sustainable mobility solutions, smart city initiatives, and data-driven decision making. Mark's commitment to innovation and excellence has made him a trusted advisor for clients seeking to transform their transport systems.</p>
+                    <p>Dr Mark Dimond has over 18 years of experience in urban data analysis and 12 years of transport planning projects. 
+                    His expertise spans various fields, including public transport data analysis, transport modelling, and capacity building. 
+                    He is particularly known for work in transport data R+D, having developed bespoke tools to help collect data internationally and new GIS workflows to understand transport questions more deeply.</p>
+                    <!-- <p>Countries of experience: UK, EU, Albania, Egypt, Kyrgyz Republic, Tajikistan</p> -->
+                    <p>If you'd like a copy of Mark's CV/resume, please get in touch using the details below.</p   >
                 </div>
             </div>
         </div>
@@ -350,7 +365,9 @@
     <!-- Footer -->
     <footer class="navbar-custom text-white text-center py-4" style="background-color: #0d2b4e;">
         <div class="container">
-            <p>&copy; 2026 Mark Dimond Transport Planning Ltd. All rights reserved. Mark Dimond Transport Planning Ltd. is a registered company in England, trading as 'Cultivate - transport and urban data'</p>
+            <p>&copy; 2026 Mark Dimond Transport Planning Ltd. All rights reserved. 
+            <br/> Mark Dimond Transport Planning Ltd. is a registered company in England, trading as 'Cultivate - transport and urban data'
+            <br/> The Conveyal Accessibility Tool is &copy; Conveyal LLC and EBP. Other images are property of their respective owners.</p>
         </div>
     </footer>
 
