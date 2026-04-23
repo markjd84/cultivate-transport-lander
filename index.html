@@ -35,20 +35,30 @@
         .hero {
             position: relative;
             height: 600px;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23404040" width="1200" height="600"/><circle cx="200" cy="150" r="80" fill="%23555"/><circle cx="1000" cy="450" r="120" fill="%23555"/><circle cx="600" cy="300" r="100" fill="%23666"/></svg>');
-            background-size: cover;
-            background-position: center;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             color: white;
-            text-align: center;
+            overflow: hidden;
         }
-        
+
+        .hero-background {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                        url('pexels-moe-bodden-5308424-5929708.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.75);
+            z-index: 0;
+        }
+
         .hero-content {
+            position: relative;
             max-width: 800px;
             z-index: 1;
+            text-align: left;
+            margin-left: 15%;
         }
         
         .hero-content h1 {
@@ -102,6 +112,8 @@
         html {
             scroll-padding-top: 70px;
         }
+
+        #logo { height: 70px !important; width: auto !important; }
     </style>
 </head>
 <body>
@@ -109,8 +121,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">
-                <span class="logo-placeholder">L</span>
-                Brand
+                <img src="logo1.png" alt="Logo" id="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -127,7 +138,7 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -139,23 +150,28 @@
 
     <!-- Hero Section -->
     <div id="home" class="hero">
+        <div class="hero-background" aria-hidden="true"></div>
         <div class="hero-content">
-            <h1>Welcome to Our Website</h1>
-            <p>Your journey to success starts here</p>
-            <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+        <div class="hero-inner">
+            <h1>Welcome</h1>
+            <p>Transport data for impactful projects:</p>
+            <p><strong>cultivate</strong> provides comprehensive data science and transport planning to build evidence for implementation.</p>
+            <a href="#about" class="btn btn-primary btn-lg">About</a>
+        </div>
+
         </div>
     </div>
 
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2 class="text-center">About Us</h2>
+            <h2 class="text-center">About</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <p class="lead">Cultivate is a leading provider of evidence-based transport planning, transport data collection, and analytics, helping businesses make informed decisions with accurate and timely information.</p>
                 </div>
                 <div class="col-md-6">
-                    <p class="lead">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p class="lead">Set up to provide seamless integration with your existing systems and workflows.</p>
                 </div>
             </div>
         </div>
@@ -221,7 +237,7 @@
     <!-- Portfolio Section -->
     <section id="portfolio">
         <div class="container">
-            <h2 class="text-center">Portfolio</h2>
+            <h2 class="text-center">Projects</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="card">
